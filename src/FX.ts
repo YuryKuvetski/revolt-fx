@@ -505,7 +505,7 @@ export class FX {
             }
         }
         for (let i in mcs) {
-            let textures = mcs[i];
+            let textures = mcs[i].sort();
             result.movieClips.push(i);
             this.initMovieClip(i, {textures: textures, anchorX: 0.5, anchorY: 0.5});
         }
