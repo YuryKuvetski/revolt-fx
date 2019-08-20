@@ -500,7 +500,7 @@ export class FX {
             }
         }
         for (const i of Object.keys(mcs)) {
-            const textures = mcs[i];
+            const textures = mcs[i].sort();
             result.movieClips.push(i);
             this.initMovieClip(i, { textures, anchorX: 0.5, anchorY: 0.5 });
         }
